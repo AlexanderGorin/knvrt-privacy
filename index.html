@@ -113,11 +113,12 @@
         <p>All user preferences, custom currency selections, pinned favorites, calculator history, and active settings are stored locally on your device storage. This data never leaves your device unless backed up by your operating system's standard backup mechanisms.</p>
 
         <h2>3. Third-Party Services and Analytics</h2>
-        <p>To improve app reliability, stability, and performance, the App integrates standard third-party services provided by Google. These services may collect certain non-personally identifiable diagnostic information:</p>
+        <p>To improve app reliability, stability, and performance, the App integrates standard third-party services. These services may collect certain non-personally identifiable diagnostic information or provide public currency data:</p>
         <ul>
+            <li><strong>ExchangeRate-API:</strong> Primary provider of live exchange rates for ~160+ fiat currencies. Used solely to calculate on-device conversions without collecting or transmitting user data. <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer">Rates by Exchange Rate API</a></li>
+            <li><strong>European Central Bank (Frankfurter API):</strong> Official reference exchange rates and historical trend data for 31 major global currencies. <a href="https://www.ecb.europa.eu/services/privacy/html/index.en.html" target="_blank" rel="noopener noreferrer">ECB Privacy Statement</a></li>
             <li><strong>Firebase Crashlytics (Google LLC):</strong> Collects crash reports, stack traces, and device performance metrics to help us fix bugs. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></li>
             <li><strong>Firebase Analytics (Google LLC):</strong> Collects aggregated, non-personally identifiable analytics data regarding app usage patterns to help us enhance user experience. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-            <li><strong>Currency Exchange Rates Providers:</strong> The app connects via secure HTTPS to fetch up-to-date foreign exchange rates. No user identifiers or personal data are transmitted during these requests.</li>
         </ul>
 
         <h2>4. Device Permissions</h2>
